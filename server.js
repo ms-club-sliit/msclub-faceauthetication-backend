@@ -21,6 +21,11 @@ connection.once("open", () => {
   console.log("MongoDB database connection established successfully");
 });
 
+// Root API Call
+app.get("/", (req, res) => {
+	res.send("<h2>MS CLUB SLIIT FACE AUTHETICATOR API</h2>");
+});
+
 //requiring files
 const usersRouter = require("./routes/users");
 
